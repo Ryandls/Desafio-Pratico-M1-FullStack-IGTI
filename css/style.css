@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+input {
+  width: 90%;
+  height: 20px;
+
+  margin-top: 5px;
+
+  border: 2px solid;
+}
+
+.container {
+  display: flex;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add {
+  border-radius: 50%;
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.border {
+  width: 45%;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}

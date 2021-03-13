@@ -80,12 +80,12 @@ function renderUsers(users) {
   users.forEach((user, index) => {
     const { id, img, age, country } = user;
     const userHTML = `
-    <div>
+    <div id="itens">
       <div>
       <img src="${img.thumbnail}" alt="${id}" />
       </div>
       <div>
-      <a>${id.first} ${id.last}</a>
+      <h3>${id.first} ${id.last}</h3>
       </div>
       <div>
           ${age},

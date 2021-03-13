@@ -12,12 +12,13 @@ async function fetchUsers() {
   const users = await resource.json();
 
   allUsers = users.map((user) => {
-    const { name, picture, dob, gender } = user;
+    const { name, picture, dob, gender, county } = user;
     return {
       id: name,
       img: picture,
       age: dob.age,
       gender,
+      county,
     };
   });
   return allUsers;
@@ -52,7 +53,7 @@ async function search() {
 }
 
 function renderUsers(users) {
-  let usersFoundHTML = "<div class='Users'>";
+  let usersFoundHTML = "<div class='users'>";
 
   const countUsersSpan = document.getElementById('countUsers');
   countUsersSpan.innerText = users.length;
@@ -77,7 +78,7 @@ function renderUsers(users) {
   avgAge.innerText = average;
 
   users.forEach((user, index) => {
-    const { id, img, age } = user;
+    const { id, img, age, country } = user;
     const userHTML = `
     <div>
       <div>
@@ -87,9 +88,8 @@ function renderUsers(users) {
       <a>${id.first} ${id.last}</a>
       </div>
       <div>
-        <ul>
-          <li>${age}<li>
-        </ul>
+          ${age},
+          ${country}
       </div>
     </div>
   `;

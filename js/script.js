@@ -12,15 +12,17 @@ async function fetchUsers() {
   const users = await resource.json();
 
   allUsers = users.map((user) => {
-    const { name, picture, dob, gender, county } = user;
+    const { name, picture, dob, gender, location } = user;
     return {
       id: name,
       img: picture,
       age: dob.age,
       gender,
-      county,
+      city: location.city,
+      country: location.country,
     };
   });
+  console.log(allUsers);
   return allUsers;
 }
 
@@ -78,7 +80,7 @@ function renderUsers(users) {
   avgAge.innerText = average;
 
   users.forEach((user, index) => {
-    const { id, img, age, country } = user;
+    const { id, img, age, city, country } = user;
     const userHTML = `
     <div>
       <div>
@@ -89,7 +91,7 @@ function renderUsers(users) {
       </div>
       <div>
           ${age},
-          ${country}
+          ${city} / ${country}  
       </div>
     </div>
   `;

@@ -10,7 +10,6 @@ let avgAge = [];
 async function fetchUsers() {
   const resource = await fetch('http://localhost:3001/users');
   const users = await resource.json();
-
   allUsers = users.map((user) => {
     const { name, picture, dob, gender, location } = user;
     return {
@@ -50,7 +49,9 @@ async function search() {
   userFounded.sort((user1, user2) =>
     user1.id.first.localeCompare(user2.id.first)
   );
-  renderUsers(userFounded);
+  userFounded.length == []
+    ? window.alert('User not Found!')
+    : renderUsers(userFounded);
 }
 
 function renderUsers(users) {
@@ -69,7 +70,6 @@ function renderUsers(users) {
 
   const sumAge = document.getElementById('sumAge');
   const totalAge = users.reduce((acc, cur) => {
-    console.log(sumAge);
     return acc + cur.age;
   }, 0);
   sumAge.innerText = totalAge;

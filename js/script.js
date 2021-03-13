@@ -22,7 +22,6 @@ async function fetchUsers() {
       country: location.country,
     };
   });
-  console.log(allUsers);
   return allUsers;
 }
 

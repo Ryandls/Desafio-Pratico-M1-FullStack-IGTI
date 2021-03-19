@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto criar uma aplicação para filtrar usuários e mostrar estatísticas a partir do filtro definido, utilizando um backend pré-definido.
+O projeto cria uma aplicação para filtrar usuários e mostrar estatísticas a partir do filtro definido, utilizando um backend pré-definido.
 
 ## 🔖 Objetivo
 

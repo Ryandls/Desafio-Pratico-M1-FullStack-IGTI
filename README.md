@@ -6,7 +6,7 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-How To Test">How to test?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-test">How to test?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 </p>
 
@@ -34,9 +34,10 @@ Esse projeto foi realizado com o objetivo de colocar em prática o que aprendi n
 
 ## 💻 How to test?
 
+<div id="how-to-test">
 Para testar esse projeto você terá que "Subir" o backend de usuários, basta executar "yarn" ou "npm install" para instalar
 as dependências e executar "yarn start" ou "npm start" para deixar o backend online. Este backend está configurado para "escutar" a porta 3001.
-
+</div>
 <div align="center">
 <h3><strong>Feito por Bryan.</strong><h3>
 
